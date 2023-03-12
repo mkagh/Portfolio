@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        border-bottom: rgb(52, 152, 219) 1px solid;
+
+        .logo {
+            width: 50px;
+            height: 50px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            ul {
+
+                display: flex;
+                margin: 0;
+
+                li {
+                    margin: 0 1em;
+                    list-style: none;
+
+                    a {
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        border: 1px solid rgb(52, 152, 219);
+                        color: rgb(52, 152, 219);
+                        padding: 4px;
+                        font-weight: 600;
+                        letter-spacing: 0.1em;
+
+
+                    }
+                }
+            }
+        }
+
+    }
+
+    main {
+        margin-bottom: 3em;
+        height: 100vh;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .data {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translateY(-50%);
+            color: rgb(52, 152, 219);
+
+
+
+            button {
+                display: block;
+                margin: auto;
+                background-color: goldenrod;
+                padding: 10px 17px;
+                border-radius: 32px;
+                margin-top: 2em;
+            }
+
+        }
+
+        .gif {
+            position: absolute;
+            top: 20%;
+            width: 250px;
+            height: 275px;
+            right: 25%;
+        }
+    }
+
+    .cards {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 3em;
+
+        .card {
+            border: rgb(52, 152, 219) solid 1px;
+
+            .card-body {
+                text-align: center;
+
+            }
+
+            img {
+                display: block;
+                margin: auto;
+                margin-top: 3px;
+                width: 120px;
+                height: 120px;
+            }
+        }
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: black;
+        color: rgb(52, 152, 219);
+        padding-top: 1.5em;
+
+        div {
+            width: 30%;
+            text-align: center;
+        }
+
+        .usefulLinks {
+            text-align: center;
+
+            a {
+                display: block;
+                margin: auto;
+            }
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .social-media {
+            margin-top: 1em;
+
+            div {
+                margin: auto;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .data h3 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    /*  */
+}
+
+@media only screen and (max-width: 770px) {
+    li {
+        font-size: 12px;
+    }
+
+    main {
+        .pozadina {
+
+            height: 80%;
+        }
+
+        .gif {
+            position: absolute;
+            top: 16% !important;
+            width: 200px !important;
+            height: 220px !important;
+            right: 25%;
+        }
+
+    }
+
+    .data {
+        position: static !important;
+        background-color: black;
+        border-top: rgb(52, 152, 219) 1px solid;
+        text-align: center;
+        padding: 1.5em 0;
+        margin-top: 3em;
+
+        button {
+            position: absolute;
+            left: 10%;
+            top: -300px;
+        }
+
+
+    }
+}
+
+.about-wrapper {
+    background-color: rgb(52, 152, 219);
+    color: black;
+
+    height: 100vh;
+
+    h1,
+    h3 {
+        margin-top: 0;
+        text-align: center;
+    }
+}
+
+.contact-wrapper {
+    background-color: rgb(52, 152, 219);
+    color: black;
+    height: 100vh;
+
+    h1 {
+        margin-top: 0;
+    }
+}
